@@ -1,15 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Swal} from 'sweetalert2';
 
 import moment from "moment";
-import { Paper, Divider } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
 import DeleteIcon from "@material-ui/icons/Delete";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
-import KeyboardVoiceIcon from "@material-ui/icons/KeyboardVoice";
-import Icon from "@material-ui/core/Icon";
 import SaveIcon from "@material-ui/icons/Save";
 
 import  {useStyles}  from "../helpers";

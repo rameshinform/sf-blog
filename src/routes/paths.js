@@ -1,4 +1,3 @@
-import React from "react";
 
 import {PostListView} from '../views';
 import { PostEditView } from "../views/post-edit.view";

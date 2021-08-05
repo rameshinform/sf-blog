@@ -1,22 +1,15 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { useForm } from "react-hook-form";
 import SaveIcon from "@material-ui/icons/Save";
 import Button from "@material-ui/core/Button";
 import TextField from '@material-ui/core/TextField';
 import DeleteIcon from "@material-ui/icons/Delete";
 import { InputLabel, FormControl, Divider } from '@material-ui/core';
-import Input from "@material-ui/core/Input";
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import { Grid, } from '@material-ui/core';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as Yup from 'yup';
 
 import { apiService } from "../services";
 import { useStyles } from "../helpers";
 
-import { withRouter, useParams, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 
 export const PostEditView = (props) => {
@@ -33,10 +26,6 @@ export const PostEditView = (props) => {
     console.log(post);
     if (!!post) setData(post);
   };
-  const onBack = () => {
-    //const {history}=props;
-    history.push('/');
-  };
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
@@ -50,7 +39,6 @@ export const PostEditView = (props) => {
       .then(setTimeout(() => history.replace('/'), 700));
   }
 
-  const onDelete = (id) => { };
 
   const { id, title, text } = data;
   return (
