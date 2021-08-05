@@ -1,6 +1,6 @@
 
 import React from "react";
-import { HashRouter as Router, Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 
 const renderRouteContainer = (Layout, Component, path, index) => (
@@ -17,7 +17,7 @@ const renderRouteContainer = (Layout, Component, path, index) => (
 );
 
 const renderRoutes = (Layout, routes) => {
-  if (!routes || routes.length == 0) return null;
+  if (!routes || routes.length === 0) return null;
   return routes.map(({ items, path: topPath, component: Component }, index) =>
     items
       ? items.map(({ path, component: Component }, index) =>

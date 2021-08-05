@@ -17,15 +17,22 @@ export const PostEditView = (props) => {
   const { history } = props;
   const classes = useStyles();
   const { postId } = useParams();
+  // React.useEffect(() => {
+  //   fetchData();
+  // }, [ postId]);
+
+
   React.useEffect(() => {
+    const fetchData = async () => {
+      const post = await apiService.getPostDetail(postId);
+      console.log(post);
+      if (!!post) setData(post);
+    };
+
     fetchData();
   }, [postId]);
 
-  const fetchData = async () => {
-    const post = await apiService.getPostDetail(postId);
-    console.log(post);
-    if (!!post) setData(post);
-  };
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
@@ -40,7 +47,6 @@ export const PostEditView = (props) => {
   }
 
 
-  const { id, title, text } = data;
   return (
     <Container maxWidth="sm">
       <h1>Edit Post</h1>
