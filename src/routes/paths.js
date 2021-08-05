@@ -5,9 +5,9 @@ import { PostEditView } from "../views/post-edit.view";
 import { PostAddEditView } from "../views/post-new.view";
 
 export const PostRoutes= {
-  posts : process.env.PUBLIC_URL +'/',
-  postEdit: process.env.PUBLIC_URL +'/posts/:postId',
-  postCreate: process.env.PUBLIC_URL +'/post'
+  posts : '/',
+  postEdit:'/posts/:postId',
+  postCreate:'/post'
 }
 
 

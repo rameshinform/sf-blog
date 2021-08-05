@@ -1,6 +1,6 @@
 
 import React from "react";
-import { HashRouter as Router, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
 
 const renderRouteContainer = (Layout, Component, path, index) => (
