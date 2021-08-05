@@ -4,6 +4,9 @@ Malana 3 - Front end test.
 Ramesh Ganesan - ganesan.rameshkumar@gmail.com/ rameshinform@yahoo.com
 
 GITHUB Solution url- https://github.com/rameshinform/sf-blog
+
+Hosted here - https://agitated-kowalevski-103098.netlify.app/#/
+
 ==========================================================================
 
 Browser Support - Chrome/Firefox/Edge/IE 11/safari
